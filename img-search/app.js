@@ -25,7 +25,7 @@ async function searchImage() {
 
     results.map((result) => {
         const imageWrapper = document.createElement("div");
-        imageWrapper.classList.add("search-result"); // Fixed class name here
+        imageWrapper.classList.add("search-result");
 
         const image = document.createElement("img");
         image.src = result.urls.small;
@@ -38,7 +38,7 @@ async function searchImage() {
 
         imageWrapper.appendChild(image);
         imageWrapper.appendChild(imageLink);
-        searchResult.append(imageWrapper); // Fixed this line
+        searchResult.append(imageWrapper);
     });
 
     page++;
