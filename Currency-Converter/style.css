@@ -1,0 +1,22 @@
+body{
+    background-color: #96a0d4;
+    }
+
+
+.containMain {
+    width: 50%;
+    background-color: #7880ab;
+    padding: 3%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px black;
+    margin-top:50px;
+    }
+
+.inner {
+    padding: 20pt;
+    text-align: center;
+    }
+
+.inner > input, .inner > select {
+    margin: 10px;
+    }
