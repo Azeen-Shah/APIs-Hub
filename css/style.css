@@ -151,7 +151,19 @@ main {
     }
 }
 
+#landingTwo {
+    position: relative;
+    top: -7px;
+}
+
 #landingTwoBg {
     width: 98vw;
     border-radius: 50px;
+}
+
+#robo_girl {
+    height: 87%;
+    position: absolute;
+    bottom: 8%;
+    left: 11px;
 }

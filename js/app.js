@@ -1,6 +1,6 @@
 // Type Js
 var typed = new Typed('#element', {
-    strings: ['<p>"The Internet is becoming <br>the town square for <br>the <b> global village </b> of tomorrow".</p>'],
+    strings: ['<p><blockquote>Artificial intelligence is<br><b>the future,</b><br>and the future is here.</blockquote></p>'],
     typeSpeed: 50,
 });
 
