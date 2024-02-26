@@ -9,7 +9,7 @@
 html,
 body {
     overflow-x: hidden;
-    background-color: black;
+    background-color: #022022;
 }
 
 
@@ -153,17 +153,135 @@ main {
 
 #landingTwo {
     position: relative;
-    top: -7px;
+    top: -6px;
 }
 
 #landingTwoBg {
-    width: 98vw;
-    border-radius: 50px;
+    width: 99vw;
+    border-radius: 20px;
 }
 
 #robo_girl {
     height: 87%;
     position: absolute;
-    bottom: 8%;
+    bottom: 6%;
     left: 11px;
+}
+
+#textContent {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+}
+
+#textContent h1 {
+    line-height: 80px;
+    text-shadow: 4px 4px 4px #00aeb8;
+}
+
+@media screen and (max-width: 900px) {
+    #textContent h1 {
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #textContent h1 {
+        line-height: 25px;
+    }
+}
+
+.blue {
+    text-shadow: 10px 10px 10px #005c61;
+    color: #00aeb8;
+}
+
+#getImages {
+    background-color: #005c61;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #00a3a8;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#getImages:hover {
+    background-color: #007b80;
+    font-weight: bolder;
+    color: #00aeb8;
+}
+
+@media screen and (max-width: 500px) {
+    #getImages {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #landingTwoBg {
+        height: 140vh;
+    }
+    #robo_girl {
+        left: 70px;
+    }
+    #textContent {
+        right: 25px;
+    }
+}
+
+#Flying-Robo {
+    position: absolute;
+    right: -100px;
+    top: 10px;
+    height: 20%;
+    animation: FlyingRobo 5s linear infinite;
+}
+
+@keyframes FlyingRobo {
+    0% {
+        right: -2500px;
+    }
+    10% {
+        right: -50px;
+    }
+    20% {
+        right: 0px;
+    }
+    30% {
+        right: 10px;
+    }
+    40% {
+        right: 20px;
+        top: 15px;
+    }
+    50% {
+        right: 30px;
+        top: 25px;
+    }
+    60% {
+        right: 35px;
+        top: 35px;
+    }
+    70% {
+        right: 40px;
+        top: 45px;
+    }
+    80% {
+        right: 20px;
+        top: 60px;
+    }
+    90% {
+        right: -200px;
+        top: 90px;
+    }
+    100% {
+        right: -250px;
+        top: 100px;
+    }
 }
