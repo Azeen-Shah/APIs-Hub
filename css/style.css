@@ -12,48 +12,24 @@ body {
     background-color: black;
 }
 
+
+/* Header */
+
 header {
-    height: 100px;
+    height: 60px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px 10px 10px;
     position: fixed;
-    z-index: 999;
-    /* background-color: rgba(0, 124, 128, 0.561); */
-    border-radius: 50px;
+    z-index: 99;
     box-sizing: border-box;
-}
-
-header #logo {
-    display: flex;
-    align-items: center;
-}
-
-header #logo-robo {
-    height: 80px;
-    animation: Robo 7s linear infinite;
-}
-
-@keyframes Robo {
-    40% {
-        transform: rotateY(180deg);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    60% {
-        transform: scale(1.05);
-    }
-}
-
-header #logo-text {
-    height: 50px;
 }
 
 header #navbar {
     height: 35px;
+    position: relative;
+    left: 30px;
 }
 
 header #nav {
@@ -68,10 +44,10 @@ header #nav #nav-ul {
     align-items: center;
     height: 400px;
     width: 400px;
-    right: 30px;
+    left: 20px;
     top: -500px;
     background-color: black;
-    transition: transform 1s ease;
+    transition: all 1s ease-in;
     z-index: 999;
     border-radius: 50px;
     border: 1px solid #007b80;
@@ -110,6 +86,16 @@ header #nav #nav-ul li a:hover {
     }
 }
 
+
+/* Landing Container */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #landing {
     position: relative;
 }
@@ -130,4 +116,42 @@ header #nav #nav-ul li a:hover {
     #bg {
         height: 100vh;
     }
+}
+
+#main-content {
+    position: absolute;
+    bottom: 15%;
+    left: 25px;
+    color: white;
+}
+
+#main-content h1 {
+    font-size: 12vw;
+    text-shadow: 10px 10px 10px #00aeb8;
+}
+
+#main-content h1:first-letter {
+    color: #007b80;
+    text-shadow: 10px 10px 10px black;
+}
+
+#main-content span {
+    font-size: 2vw;
+    position: relative;
+    left: 4vw;
+    top: -5vh;
+}
+
+@media screen and (max-width: 912px) {
+    #main-content {
+        left: 15px;
+    }
+    #main-content span {
+        top: -2vh;
+    }
+}
+
+#landingTwoBg {
+    width: 98vw;
+    border-radius: 50px;
 }

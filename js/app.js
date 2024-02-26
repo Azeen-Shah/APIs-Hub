@@ -1,3 +1,11 @@
+// Type Js
+var typed = new Typed('#element', {
+    strings: ['<p>"The Internet is becoming <br>the town square for <br>the <b> global village </b> of tomorrow".</p>'],
+    typeSpeed: 50,
+});
+
+
+// Header
 let navBar = document.querySelector("#nav");
 let navUl = document.querySelector("#nav-ul");
 
@@ -16,29 +24,20 @@ navBar.addEventListener("click", () => {
 });
 
 
-
+// Landing Container
 let imageIndex = 0;
-
-
 const imageSources = [
     "./img/robo8.png",
-    "./img/robo9.png"
+    "./img/robo9.png",
+    "./img/robot10.png"
 ];
-
 
 function changeImage() {
 
     const robotImg = document.getElementById("robot");
-
-
     robotImg.src = imageSources[imageIndex];
-
-
     imageIndex = (imageIndex + 1) % imageSources.length;
 }
 
-
 changeImage();
-
-
 setInterval(changeImage, 5000);
