@@ -173,6 +173,13 @@ main {
     margin: 20px 0;
 }
 
+#heading p {
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 99vw;
+}
+
 #products {
     display: flex;
     justify-content: center;
