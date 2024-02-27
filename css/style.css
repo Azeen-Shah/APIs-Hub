@@ -36,9 +36,11 @@ header {
 }
 
 header #navbar {
-    height: 55px;
+    height: 30px;
     position: relative;
     left: 30px;
+    top: 10px;
+    /* border: 1px solid black; */
 }
 
 header #nav {
@@ -258,13 +260,12 @@ main {
     }
 }
 
-/* CONTACT US */
 
+/* CONTACT US */
 
 #contact {
     text-align: center;
 }
-
 
 #contactCards {
     display: flex;
