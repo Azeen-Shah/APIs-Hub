@@ -161,165 +161,7 @@ main {
 }
 
 
-/* #landingTwo {
-    position: relative;
-    top: -6px;
-}
-
-#landingTwoBg {
-    width: 99vw;
-    border-radius: 20px;
-}
-
-#robo_girl {
-    height: 87%;
-    position: absolute;
-    bottom: 6%;
-    left: 11px;
-}
-
-#textContent {
-    position: absolute;
-    top: 40%;
-    right: 15px;
-    color: white;
-    font-size: 3vw;
-    text-align: center;
-}
-
-#textContent h1 {
-    line-height: 80px;
-    text-shadow: 4px 4px 4px #00aeb8;
-}
-
-@media screen and (max-width: 900px) {
-    #textContent h1 {
-        line-height: 50px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #textContent h1 {
-        line-height: 25px;
-    }
-}
-
-.blue {
-    text-shadow: 10px 10px 10px #005c61;
-    color: #00aeb8;
-}
-
-#getImages {
-    background-color: #005c61;
-    width: 100%;
-    display: block;
-    padding: 15px 0;
-    border-radius: 30px;
-    text-decoration: none;
-    color: #00a3a8;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#getImages:hover {
-    background-color: #007b80;
-    font-weight: bolder;
-    color: #00aeb8;
-}
-
-@media screen and (max-width: 500px) {
-    #getImages {
-        padding: 10px 0;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    #landingTwoBg {
-        height: 150vh;
-        width: 99vw;
-    }
-    #robo_girl {
-        left: 70px;
-    }
-    #textContent {
-        right: 25px;
-    }
-}
-
-#Flying-Robo {
-    position: absolute;
-    right: -100px;
-    top: 10px;
-    height: 20%;
-    animation: FlyingRobo 5s linear infinite;
-}
-
-@keyframes FlyingRobo {
-    0% {
-        right: -2500px;
-    }
-    10% {
-        right: -50px;
-    }
-    20% {
-        right: 0px;
-    }
-    30% {
-        right: 20px;
-    }
-    40% {
-        right: 30px;
-        top: 20px;
-    }
-    50% {
-        right: 35px;
-        top: 30px;
-    }
-    60% {
-        right: 45px;
-        top: 40px;
-    }
-    70% {
-        right: 55px;
-        top: 50px;
-    }
-    80% {
-        right: 20px;
-        top: 80px;
-    }
-    90% {
-        right: -200px;
-        top: 100px;
-    }
-    100% {
-        right: -250px;
-        top: 120px;
-    }
-}
-
-#products {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#products div {
-    height: 300px;
-    width: 300px;
-    background-color: black;
-    margin: 30px;
-    overflow: hidden;
-}
-
-#products div a img {
-    width: 100%;
-}
-
-#products div:hover a img {
-    transform: scale(1.05);
-} */
+/* <!-- Products --> */
 
 #services {
     text-align: center;
@@ -375,4 +217,43 @@ main {
 #products div a button:hover {
     color: #007b80;
     background-color: black;
+}
+
+
+/* ABOUT */
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00aeb8;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    width: 100vw;
+}
+
+#about-text {
+    width: 600px;
+}
+
+#about-text h1 {
+    margin: 10px 0;
+}
+
+#about-text p {
+    color: white;
+}
+
+#about-robot {
+    height: 350px;
+}
+
+@media screen and (max-width: 1000px) {
+    #about {
+        justify-content: center;
+    }
+    #about-text {
+        width: 100vw;
+        text-align: center;
+    }
 }
