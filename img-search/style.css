@@ -9,11 +9,31 @@ body {
     line-height: 1.6;
 }
 
+#home {
+    margin: 20px 0 0 20px;
+    background-color: #005c61;
+    border: none;
+    border-radius: 30px;
+}
+
+#home a {
+    color: #00a3a8;
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#home a:hover {
+    font-weight: bolder;
+}
+
 h1 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin: 40px 0 50px 0;
+    color: #005c61;
 }
 
 form {
@@ -36,7 +56,7 @@ form {
 
 #search-button {
     padding: 10px 20px;
-    background-color: #138065;
+    background-color: #005c61;
     color: white;
     border: none;
     font-size: 18px;
@@ -84,7 +104,7 @@ form {
 }
 
 #show-more-button {
-    background-color: #008cba;
+    background-color: #005c61;
     font-size: 18px;
     border: none;
     color: white;
