@@ -1,22 +1,70 @@
-body{
-    background-color: #96a0d4;
-    }
+html {
+    overflow-x: hidden;
+}
 
+body {
+    background-color: #007b80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+}
+
+#home {
+    margin: 20px;
+    background-color: #005c61;
+    border: none;
+    border-radius: 30px;
+    transition: all .5s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#home a {
+    color: #00a3a8;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .5s ease-in;
+}
+
+#home:hover {
+    background-color: #00a3a8;
+    color: #005c61;
+}
+
+#home a:hover {
+    font-weight: bolder;
+    color: #005c61;
+}
 
 .containMain {
-    width: 50%;
-    background-color: #7880ab;
+    width: 80vw;
+    background-color: #005c61;
+    background-image: linear-gradient(315deg, #005c61 0%, #00aeb8 100%);
     padding: 3%;
     border-radius: 15px;
-    box-shadow: 1px 1px 1px black;
-    margin-top:50px;
-    }
+    box-shadow: 1px 1px 10px black;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
 .inner {
     padding: 20pt;
     text-align: center;
-    }
+}
 
-.inner > input, .inner > select {
+.inner>input,
+.inner>select {
     margin: 10px;
-    }
+}

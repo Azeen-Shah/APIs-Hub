@@ -1,22 +1,30 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Language Translator</title>
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="style.css">
 
 
-</head> 
-<body> 
-<div  class="wrapper">
-    <header>
-        <h1>Language Translator</h1>
-    </header>
-<form>
-  <div class="row">
-    <div class="outer">
-        <select size="1" id="sourceLang" name="sourceLang" onChange="translater()">
+</head>
+
+<body>
+
+    <button id="home">
+    <a href="../index.html">Go to Home</a>
+    </button>
+
+
+    <div class="wrapper">
+        <header>
+            <h1>Language Translator</h1>
+        </header>
+        <form>
+            <div class="row">
+                <div class="outer">
+                    <select size="1" id="sourceLang" name="sourceLang" onChange="translater()">
           <option value="en" selected>English</option>
           <option value="ar">Arabic</option>
           <option value="de">German</option>
@@ -32,14 +40,14 @@
           <option value="zh">Chinese</option>
           <option value="he">Hebrew</option>
         </select>
-    </div>
-        <textarea id="sourceText" onChange="translater()"></textarea>
-        <!--<br>
+                </div>
+                <textarea id="sourceText" onChange="translater()"></textarea>
+                <!--<br>
         <button onClick="translater()">Translate</button>-->
-  </div>
-  <div class="row">
-    <div class="outer">
-        <select size="1" id="resultLang" name="resultLang" onChange="translater()">
+            </div>
+            <div class="row">
+                <div class="outer">
+                    <select size="1" id="resultLang" name="resultLang" onChange="translater()">
           <option value="en">English</option>
           <option value="ar">Arabic</option>
           <option value="de">German</option>
@@ -55,13 +63,14 @@
           <option value="zh">Chinese</option>
           <option value="he">Hebrew</option>
         </select>
-  </div>
-        <textarea id="resultText"></textarea>
-</div>
-</form>
-</div> 
+                </div>
+                <textarea id="resultText"></textarea>
+            </div>
+        </form>
+    </div>
 
 
-<script src="translate.js"></script>
-</body> 
+    <script src="translate.js"></script>
+</body>
+
 </html>

@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FBR - Simple Filing</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+
     <style>
-        body{
-            background-color: #a2cdfa;
-            margin-top: 30px;
-            }
+        body {
+            background-color: #00aeb8;
+            background-image: linear-gradient(315deg, #00aeb8 0%, #005c61 74%);
+        }
+        
+        #home {
+            margin: 8px;
+            background-color: #005c61;
+            border: none;
+            border-radius: 30px;
+            transition: all .5s ease-in;
+            margin-bottom: 30px;
+        }
+        
+        #home a {
+            color: #00a3a8;
+            display: inline-block;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all .5s ease-in;
+        }
+        
+        #home:hover {
+            background-color: #00a3a8;
+            color: #005c61;
+        }
+        
+        #home a:hover {
+            font-weight: bolder;
+            color: #005c61;
+        }
+        
+        .print {
+            background-color: #005c61;
+        }
+        
+        .print:hover {
+            background-color: #00a3a8;
+            color: #005c61;
+            font-weight: bolder;
+        }
     </style>
+
 </head>
+
 <body>
 
-<div class="container" align="center">
+    <button id="home">
+        <a href="../index.html">Go to Home</a>
+    </button>
 
-    
+
+    <div class="container" align="center">
+
+
         <div class="card border-primary mb-3" style="max-width: 40rem;">
             <div class="card-header"><b>Filing of Income Tax Returns to FBR</b>
                 <br><i>for salaried persons (simple cases)</i></div>
             <div class="card-body text-primary">
-                <p>Enter your name & CNIC No.</p>    
+                <p>Enter your name & CNIC No.</p>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="userName" placeholder="" autofocus>
                     <label for="userName">Name</label>
@@ -36,10 +83,9 @@
         <div class="card border-primary mb-3" style="max-width: 40rem;">
             <div class="card-header">Salary & Deduction</div>
             <div class="card-body text-primary">
-                <p>Enter your total income through salary in current financial year.
-                Also enter if any amount was deducted from your salary.</p>
-        
-            
+                <p>Enter your total income through salary in current financial year. Also enter if any amount was deducted from your salary.</p>
+
+
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" id="salary" placeholder="" onChange="calculate()">
                     <label for="salary">Total Income (Salary)</label>
@@ -54,9 +100,8 @@
         <div class="card border-primary mb-3" style="max-width: 40rem;">
             <div class="card-header">Personal Expenses</div>
             <div class="card-body text-primary">
-                <p>Enter all your expenses, you spent this year including House Rent, Transportation, Utility Bills, 
-                Educational and Medical Expenses etc.</p>
-                
+                <p>Enter all your expenses, you spent this year including House Rent, Transportation, Utility Bills, Educational and Medical Expenses etc.</p>
+
                 <div class="form-floating mb-3">
                     <input type="number" id="rent" class="form-control" placeholder="" onChange="calculate()">
                     <label for="rent">House Rent</label>
@@ -120,8 +165,8 @@
             <div class="card-header">Assets (Previous Year)</div>
             <div class="card-body text-primary">
                 <p>Before this financial year, if you had any asset enter in here.</p>
-            
-                
+
+
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" id="PinvestmentAccount" placeholder="" onChange="calculate()">
                     <label for="PinvestmentAccount">Amount in Bank Account</label>
@@ -153,8 +198,8 @@
             <div class="card-header">Assets (Current Year)</div>
             <div class="card-body text-primary">
                 <p>If you spent any amount in rising your assets, enter increase in amount here.</p>
-        
-                    
+
+
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" placeholder="" id="investmentAccount" onChange="calculate()">
                     <label for="investmentAccount">Amount in Bank Account</label>
@@ -185,7 +230,7 @@
         <div class="card border-primary mb-3" style="max-width: 40rem;">
             <div class="card-header">Reconcilation</div>
             <div class="card-body text-primary">
-                
+
                 <div class="form-floating mb-3">
                     <input type="number" class="form-control" placeholder="" id="assetsCurrent" readonly>
                     <label for="assetsCurrent">Net Assets Current Year</label>
@@ -210,15 +255,16 @@
                     <input type="number" class="form-control" placeholder="" id="unreconciled" readonly>
                     <label for="unreconciled">Unreconciled Amount</label>
                 </div>
-                
+
                 <br>
                 <p><i>Once, the amount is reconciled, click the button below and follow instructions.</i></p>
-                <button class="btn btn-primary" onClick="printReport()">View/Print Instructions</button>
+                <button class="btn btn-primary print" onClick="printReport()">View/Print Instructions</button>
             </div>
         </div>
-    
-</div>
 
-<script src="filer.js"></script>
+    </div>
+
+    <script src="filer.js"></script>
 </body>
+
 </html>

@@ -1,19 +1,27 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Currency Converter</title>
-<link rel="stylesheet" href="bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-</head> 
-<body> 
-<div class="container-sm containMain">
-  <div class="inner">
-      <h1>Currency Converter</h1>
-      <br>
-    <select size="1" name="currencyFrom" id="currencyFrom" class="form-select" onChange="convertx()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter | API HUB | Final Project</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <button id="home">
+        <a href="../index.html">Go to Home</a>
+    </button>
+
+
+    <div class="container-sm containMain">
+        <div class="inner">
+            <h1>Currency Converter</h1>
+            <br>
+            <select size="1" name="currencyFrom" id="currencyFrom" class="form-select" onChange="convertx()">
        <option value="USD">USD - US Dollar</option>
        <option value="EUR">EUR - Euro</option>
        <option value="JPY">JPY - Japanese Yen</option>
@@ -38,11 +46,11 @@
        <option value="PKR" selected>PKR - Pakistani Rupee</option>
        <option value="INR">INR - Indian Rupee</option>
     </select>
-    <input type="number" min="0" id="amountFrom" value="1" class="form-control" onChange="convertx()">
-  </div>
-    
-  <div class="inner">
-    <select size="1" name="currencyTo" id="currencyTo" class="form-select" onChange="convertx()">
+            <input type="number" min="0" id="amountFrom" value="1" class="form-control" onChange="convertx()">
+        </div>
+
+        <div class="inner">
+            <select size="1" name="currencyTo" id="currencyTo" class="form-select" onChange="convertx()">
        <option value="USD" selected>USD - US Dollar</option>
        <option value="EUR">EUR - Euro</option>
        <option value="JPY">JPY - Japanese Yen</option>
@@ -67,11 +75,11 @@
        <option value="PKR">PKR - Pakistani Rupee</option>
        <option value="INR">INR - Indian Rupee</option>
     </select>
-    <input type="number" id="amountTo" class="form-control" readonly>
-  </div>
-</div> 
+            <input type="number" id="amountTo" class="form-control" readonly>
+        </div>
+    </div>
 
+    <script src="forex.js"></script>
+</body>
 
-<script src="forex.js"></script>
-</body> 
 </html>

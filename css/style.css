@@ -18,7 +18,6 @@ h6 {
 html,
 body {
     overflow-x: hidden;
-    /* background-color: #022022; */
 }
 
 
@@ -40,7 +39,6 @@ header #navbar {
     position: relative;
     left: 30px;
     top: 10px;
-    /* border: 1px solid black; */
 }
 
 header #nav {
@@ -198,7 +196,7 @@ main {
 }
 
 #products div:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
 #products div a {
